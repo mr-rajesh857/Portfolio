@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+
+  <title>My Portfolio</title>
+</head>
+
+<body>
+
+
+
+  <header class="header">
+    <nav class="nav container">
+        <h1 class="nav__logo">Rajesh</h1>
+        <ul class="nav__menu">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact-Me</a></li>
+        </ul>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+
+  <!-- Home section -->
+
+  <section class="home section" id="home">
+    <div class="home__container container">
+      <div class="home__content grid">
+        <div class="home__data">
+          <h1 class="home__title">Hi, I'm Rajesh Kumar</h1>
+          <h3 class="home__subtitle">
+            Computer Science Engineering Student
+          </h3>
+          <p class="home__description">
+            A third-year undergraduate engineering student at <strong>Gandhi Institute of Engineering and
+              Technology</strong>, Gunupur, Odisha.
+          </p>
+          <a href="#contact" class="button button--flex">
+            Contact me<i class="uil uil-message button__icon"></i>
+          </a>
+        </div>
+
+        <div class="home__img">
+          <div class="round-image">
+            <img src="./assets/img/img-2.jpg" alt="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section  -->
+
+  <section class="about section" id="about">
+    <h2 class="section__title">About Me</h2>
+    <span class="section__subtitle">My introduction</span>
+
+    <div class="about__container container grid">
+      <!-- <img src="assets/img/profile1.jpg" alt="" class="about__img" /> -->
+      <div class="home__img">
+        <div class="round-image">
+          <img src="./assets/img/profile1.jpg" alt="image">
+        </div>
+      </div>
+
+      <div class="about__data">
+        <p class="about__description">
+          As a third-year Computer Science and Engineering undergraduate at GIET University, I am passionate about
+          technology and continuously eager to learn and grow. I possess a self-motivated, can-do attitude and thrive in
+          challenging, dynamic environments. I am seeking a competitive position to enhance my skills and contribute
+          effectively to a professional organization, utilizing my knowledge and enthusiasm to drive innovation and
+          efficiency.
+        </p>
+
+        <div class="about__info">
+          <div>
+            <span class="about__info-title">08.50+</span>
+            <span class="about__info-name">Aggregate <br />CGPA</span>
+          </div>
+
+          <div>
+            <span class="about__info-title">03+</span>
+            <span class="about__info-name">Projects</span>
+          </div>
+        </div>
+
+        <div class="about__buttons">
+          <a download="" href="assets\MyCV.pdf" class="button button--flex">
+            Download CV<i class="fas fa-download button__icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills  -->
+
+  <section class="skills section" id="skills">
+    <h2 class="section__title">Skills</h2>
+    <span class="section__subtitle">My technical level</span>
+
+    <div class="skills__container container grid">
+      <div>
+        <!-- Skill 1 -->
+        <div class="skills__content skills__open">
+          <div class="skills__header">
+            <i class="fas fa-pencil-ruler skills__icon"></i>
+            <div>
+              <h1 class="skills__title">Programming Languages</h1>
+            </div>
+            <i class="uil uil-angle-down skills__arrow"></i>
+            <!-- <i class="fa-solid fa-arrow-down "></i> -->
+          </div>
+          <div class="skills__list grid">
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">C</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">Python</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">HTML-5</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">CSS</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">JavaScript</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Skill 2 -->
+        <div class="skills__content skills__close">
+          <div class="skills__header">
+            <i class="fas fa-code skills__icon"></i>
+            <div>
+              <h1 class="skills__title">IT Constructs</h1>
+            </div>
+            <i class="uil uil-angle-down skills__arrow"></i>
+          </div>
+          <div class="skills__list grid">
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">DS & Algorithms</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">DBMS</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">OOP</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">OS</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Skill 3 -->
+        <div class="skills__content skills__close">
+          <div class="skills__header">
+            <i class="fas fa-swatchbook skills__icon"></i>
+            <div>
+              <h1 class="skills__title">Technologies</h1>
+            </div>
+            <i class="uil uil-angle-down skills__arrow"></i>
+          </div>
+          <div class="skills__list grid">
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">Git</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">MySQL</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">MongoDB</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">Excel</h3>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__name">Power BI</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Project Section -->
+  <div class="project-bg" id="project">
+    <div class="project-header">
+      <h2 class="title">Projects</h2>
+      <span class="subtitle">Most recent work</span>
+    </div>
+
+    <div class="project">
+      <div class="card-container">
+        <div class="card">
+          <img src="assets/img/Tour India.avif" alt="Project Image">
+          <div class="card-content">
+            <h3>Tour India</h3>
+            <p>Embark on an unforgettable journey through India, a land of diverse landscapes, rich history, and vibrant cultures. From the majestic peaks of the Himalayas in the north to the serene backwaters of Kerala in the south, India offers a kaleidoscope of experiences that will captivate your senses.</p>
+            <div class="card-buttons">
+              <a href="https://github.com/username/awesome-project" target="_blank">GitHub Repo</a>
+              <a href="https://liveprojectlink.com/awesome-project" target="_blank">See Live</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/img/Diwali Sales Analysis.jpeg" alt="Project Image">
+            <div class="card-content">
+              <h3>Diwali Sales Analysis</h3>
+              <p>Diwali, the festival of lights, is a major cultural event in India and a key period for businesses. Marked by celebrations and gift-giving, it sees a surge in consumer spending. Analyzing Diwali sales offers insights into consumer behavior, market trends, and the overall economic landscape.</p>
+              <div class="card-buttons">
+                <a href="https://github.com/username/awesome-project" target="_blank">GitHub Repo</a>
+                <a href="https://liveprojectlink.com/awesome-project" target="_blank">See Live</a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+          <div class="card-container">
+            <div class="card">
+              <img src="assets/img/fake news detection.png" alt="Project Image">
+              <div class="card-content">
+                <h3>Fake News Detection Model</h3>
+                <p>A Fake News Detection Model uses machine learning and natural language processing to identify false information. It analyzes text patterns, source credibility, and content reliability to distinguish legitimate news from fake news, reducing misinformation and helping users access accurate information.</p>
+                <div class="card-buttons">
+                  <a href="https://github.com/username/awesome-project" target="_blank">GitHub Repo</a>
+                  <a href="https://liveprojectlink.com/awesome-project" target="_blank">See Live</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card-container">
+            <div class="card">
+              <img src="assets/img/hr analytics.jpeg" alt="Project Image">
+              <div class="card-content">
+                <h3>HR Analytics Dashboard</h3>
+                <p>Developed an HR analytics dashboard in Power BI to visualize employee data, track key HR metrics, and generate insights for workforce optimization. Enhanced decision-making through interactive visualizations and real-time data updates, focusing on retention, performance, and recruitment analytics.</p>
+                <div class="card-buttons">
+                  <a href="https://github.com/username/awesome-project" target="_blank">GitHub Repo</a>
+                  <a href="https://liveprojectlink.com/awesome-project" target="_blank">See Live</a>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Repeat the above card block for more cards -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Contact me  -->
+
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+      <h2 class="contact-title">Contact Me</h2>
+      <span class="contact-subtitle">Get in touch</span>
+
+      <div class="contact-grid">
+          <div class="contact-info">
+              <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                  <div>
+                      <h3 class="info-title">Phone</h3>
+                      <span class="info-detail"><a href="tel:+9186581182272">+91 86581182272</a></span>
+                  </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                  <div>
+                      <h3 class="info-title">Email</h3>
+                      <span class="info-detail">rajeshkumarpanda690@gmail.com</span>
+                  </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                      <h3 class="info-title">Location</h3>
+                      <span class="info-detail">Berhampur, Ganjam, Odisha</span>
+                  </div>
+              </div>
+          </div>
+
+          <form action="#" class="contact-form">
+              <div class="form-grid">
+                  <div class="form-group">
+                      <label for="name" class="label">Name</label>
+                      <input type="text" id="name" class="input" />
+                  </div>
+
+                  <div class="form-group">
+                      <label for="email" class="label">Email</label>
+                      <input type="email" id="email" class="input" />
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label for="message" class="label">Message</label>
+                  <textarea id="message" class="input" rows="7"></textarea>
+              </div>
+
+              <button type="submit" class="custom-button">
+                  Send Message
+                  <i class="icon uil uil-message"></i>
+              </button>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- Footer Section  -->
+
+<footer class="footer">
+  <div class="footer__bg">
+    <div class="footer__container container grid">
+      <div>
+        <h1 class="footer__title">Rajesh</h1>
+        <span class="footer__subtitle">Computer Science And Engineering Student</span>
+      </div>
+
+      <ul class="footer__links">
+        <li><a href="#skills" class="footer__link">Skills</a></li>
+        <li><a href="#project" class="footer__link">Projects</a></li>
+        <li><a href="#contact" class="footer__link">Contact-Me</a></li>
+      </ul>
+
+      <div class="footer__socials">
+        <a href="https://www.linkedin.com/in/rajeshkumar-panda-a48265251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="footer__social">
+       
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/mr-rajesh857" target="_blank" class="footer__social">
+          
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/mr.rajesh235?igsh=MXg4ZGxvanlmN2hnZQ==" target="__blank" class="footer__social">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <p class="footer__copy">&#169; Rajesh. All rights reserved</p>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
