@@ -2,407 +2,656 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh Kumar Panda | ML Engineer & Full-Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Rajesh Kumar Panda - ML Engineer, Full-Stack Developer with 4 IEEE publications.">
+    <meta name="keywords"
+        content="Rajesh Kumar Panda, ML Engineer, Full Stack Developer, Python, Flask, Machine Learning">
+    <meta name="author" content="Rajesh Kumar Panda">
+    <meta name="theme-color" content="#0a0f1a">
 
-  <title>My Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-
-
-  <header class="header">
-    <nav class="nav container">
-        <h1 class="nav__logo">Rajesh</h1>
-        <ul class="nav__menu">
-            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Contact-Me</a></li>
-        </ul>
-        <div class="nav__toggle" id="nav-toggle">
-            <i class="fa-solid fa-bars"></i>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">RKP</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#publications">Publications</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://github.com/mr-rajesh857" target="_blank" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rajesh-kumar-panda-a48265251" target="_blank" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="mailto:rajeshkumarpanda857@gmail.com" aria-label="Email">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <i data-lucide="menu" id="menuIcon"></i>
+            </button>
         </div>
     </nav>
-</header>
 
-
-  <!-- Home section -->
-
-  <section class="home section" id="home">
-    <div class="home__container container">
-      <div class="home__content grid">
-        <div class="home__data">
-          <h1 class="home__title">Hi, I'm Rajesh Kumar</h1>
-          <h3 class="home__subtitle">
-            Computer Science Engineering Student
-          </h3>
-          <p class="home__description">
-            A third-year undergraduate engineering student at <strong>Gandhi Institute of Engineering and
-              Technology</strong>, Gunupur, Odisha.
-          </p>
-          <a href="#contact" class="button button--flex">
-            Contact me<i class="uil uil-message button__icon"></i>
-          </a>
-        </div>
-
-        <div class="home__img">
-          <div class="round-image">
-            <img src="./assets/img/img-2.jpg" alt="image">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- About Section  -->
-
-  <section class="about section" id="about">
-    <h2 class="section__title">About Me</h2>
-    <span class="section__subtitle">My introduction</span>
-
-    <div class="about__container container grid">
-      <!-- <img src="assets/img/profile1.jpg" alt="" class="about__img" /> -->
-      <div class="home__img">
-        <div class="round-image">
-          <img src="./assets/img/profile1.jpg" alt="image">
-        </div>
-      </div>
-
-      <div class="about__data">
-        <p class="about__description">
-          As a third-year Computer Science and Engineering undergraduate at GIET University, I am passionate about
-          technology and continuously eager to learn and grow. I possess a self-motivated, can-do attitude and thrive in
-          challenging, dynamic environments. I am seeking a competitive position to enhance my skills and contribute
-          effectively to a professional organization, utilizing my knowledge and enthusiasm to drive innovation and
-          efficiency.
-        </p>
-
-        <div class="about__info">
-          <div>
-            <span class="about__info-title">08.50+</span>
-            <span class="about__info-name">Aggregate <br />CGPA</span>
-          </div>
-
-          <div>
-            <span class="about__info-title">03+</span>
-            <span class="about__info-name">Projects</span>
-          </div>
-        </div>
-
-        <div class="about__buttons">
-          <a download="" href="assets\MyCV.pdf" class="button button--flex">
-            Download CV<i class="fas fa-download button__icon"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Skills  -->
-
-  <section class="skills section" id="skills">
-    <h2 class="section__title">Skills</h2>
-    <span class="section__subtitle">My technical level</span>
-
-    <div class="skills__container container grid">
-      <div>
-        <!-- Skill 1 -->
-        <div class="skills__content skills__open">
-          <div class="skills__header">
-            <i class="fas fa-pencil-ruler skills__icon"></i>
-            <div>
-              <h1 class="skills__title">Programming Languages</h1>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="container hero-content">
+            <div class="hero-badge animate-fade-in">
+                <span class="status-dot"></span>
+                Open to opportunities
             </div>
-            <i class="uil uil-angle-down skills__arrow"></i>
-            <!-- <i class="fa-solid fa-arrow-down "></i> -->
-          </div>
-          <div class="skills__list grid">
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">C</h3>
-              </div>
+            <h1 class="hero-title animate-fade-in delay-1">
+                Hi, I'm <span class="text-gradient">Rajesh Kumar Panda</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-in delay-2">
+                <span class="highlight">ML Engineer</span> & <span class="highlight">Full-Stack Developer</span><br>
+                <span class="hero-description">Building intelligent, scalable solutions with Python, Flask & AI</span>
+            </p>
+            <div class="hero-info animate-fade-in delay-3">
+                <span><i data-lucide="graduation-cap"></i> B.Tech CSE '26 • CGPA 8.46</span>
+                <span><i data-lucide="map-pin"></i> Odisha, India</span>
             </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">Python</h3>
-              </div>
+            <div class="hero-cta animate-fade-in delay-4">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-outline">View Projects</a>
             </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">HTML-5</h3>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">CSS</h3>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">JavaScript</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <!-- Skill 2 -->
-        <div class="skills__content skills__close">
-          <div class="skills__header">
-            <i class="fas fa-code skills__icon"></i>
-            <div>
-              <h1 class="skills__title">IT Constructs</h1>
-            </div>
-            <i class="uil uil-angle-down skills__arrow"></i>
-          </div>
-          <div class="skills__list grid">
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">DS & Algorithms</h3>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">DBMS</h3>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">OOP</h3>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">OS</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <!-- Skill 3 -->
-        <div class="skills__content skills__close">
-          <div class="skills__header">
-            <i class="fas fa-swatchbook skills__icon"></i>
-            <div>
-              <h1 class="skills__title">Technologies</h1>
-            </div>
-            <i class="uil uil-angle-down skills__arrow"></i>
-          </div>
-          <div class="skills__list grid">
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">Git</h3>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">MySQL</h3>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">MongoDB</h3>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">Excel</h3>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">Power BI</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <!-- Project Section -->
-  <div class="project-bg" id="project">
-    <div class="project-header">
-      <h2 class="title">Projects</h2>
-      <span class="subtitle">Most recent work</span>
-    </div>
-
-    <div class="project">
-      <div class="card-container">
-        <div class="card">
-          <img src="assets/img/Tour India.avif" alt="Project Image">
-          <div class="card-content">
-            <h3>Tour India</h3>
-            <p>Embark on an unforgettable journey through India, a land of diverse landscapes, rich history, and vibrant cultures. From the majestic peaks of the Himalayas in the north to the serene backwaters of Kerala in the south, India offers a kaleidoscope of experiences that will captivate your senses.</p>
-            <div class="card-buttons">
-              <a href="https://github.com/username/awesome-project" target="_blank">GitHub Repo</a>
-              <a href="https://liveprojectlink.com/awesome-project" target="_blank">See Live</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="card-container">
-          <div class="card">
-            <img src="assets/img/Diwali Sales Analysis.jpeg" alt="Project Image">
-            <div class="card-content">
-              <h3>Diwali Sales Analysis</h3>
-              <p>Diwali, the festival of lights, is a major cultural event in India and a key period for businesses. Marked by celebrations and gift-giving, it sees a surge in consumer spending. Analyzing Diwali sales offers insights into consumer behavior, market trends, and the overall economic landscape.</p>
-              <div class="card-buttons">
-                <a href="https://github.com/username/awesome-project" target="_blank">GitHub Repo</a>
-                <a href="https://liveprojectlink.com/awesome-project" target="_blank">See Live</a>
-              </div>
-            </div>
-          </div>
-          </div>
-
-
-          <div class="card-container">
-            <div class="card">
-              <img src="assets/img/fake news detection.png" alt="Project Image">
-              <div class="card-content">
-                <h3>Fake News Detection Model</h3>
-                <p>A Fake News Detection Model uses machine learning and natural language processing to identify false information. It analyzes text patterns, source credibility, and content reliability to distinguish legitimate news from fake news, reducing misinformation and helping users access accurate information.</p>
-                <div class="card-buttons">
-                  <a href="https://github.com/username/awesome-project" target="_blank">GitHub Repo</a>
-                  <a href="https://liveprojectlink.com/awesome-project" target="_blank">See Live</a>
+            <div class="hero-stats animate-fade-in delay-5">
+                <div class="stat">
+                    <span class="stat-value text-gradient">4+</span>
+                    <span class="stat-label">IEEE Papers</span>
                 </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card-container">
-            <div class="card">
-              <img src="assets/img/hr analytics.jpeg" alt="Project Image">
-              <div class="card-content">
-                <h3>HR Analytics Dashboard</h3>
-                <p>Developed an HR analytics dashboard in Power BI to visualize employee data, track key HR metrics, and generate insights for workforce optimization. Enhanced decision-making through interactive visualizations and real-time data updates, focusing on retention, performance, and recruitment analytics.</p>
-                <div class="card-buttons">
-                  <a href="https://github.com/username/awesome-project" target="_blank">GitHub Repo</a>
-                  <a href="https://liveprojectlink.com/awesome-project" target="_blank">See Live</a>
+                <div class="stat">
+                    <span class="stat-value text-gradient">93.9%</span>
+                    <span class="stat-label">ML Accuracy</span>
                 </div>
-              </div>
+                <div class="stat">
+                    <span class="stat-value text-gradient">5+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
             </div>
-          </div>
-            <!-- Repeat the above card block for more cards -->
-          </div>
         </div>
-      </div>
-    </div>
+        <div class="scroll-indicator">
+            <i data-lucide="arrow-down"></i>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Crafting <span class="text-gradient">Intelligent Solutions</span></h2>
+            </div>
+            <div class="about-content glass-card">
+                <p>I'm a <strong>Computer Science undergraduate</strong> at Gandhi Institute of Engineering and
+                    Technology, graduating in 2026. My passion lies at the intersection of <span
+                        class="text-primary">Machine Learning</span>, <span class="text-primary">Full-Stack
+                        Development</span>, and <span class="text-primary">Intelligent Automation</span>.</p>
+                <p>With hands-on experience from internships at <strong>OSETTL Technologies</strong> and <strong>NIT
+                        Kurukshetra</strong>, I've developed real-world solutions ranging from ML-powered PCOS
+                    prediction systems (93.9% accuracy) to automated document verification workflows using OCR and
+                    pattern matching.</p>
+                <p>My research has been published in <span class="text-primary"><strong>4 IEEE conference
+                            papers</strong></span>, covering domains like agricultural price prediction, personalized
+                    health recommendations, and interpretable AI systems.</p>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-card glass-card">
+                    <div class="highlight-icon"><i data-lucide="brain"></i></div>
+                    <h3>ML & AI Research</h3>
+                    <p>Published 4 IEEE papers on ML/DL applications in healthcare and agriculture</p>
+                </div>
+                <div class="highlight-card glass-card">
+                    <div class="highlight-icon"><i data-lucide="code-2"></i></div>
+                    <h3>Full-Stack Development</h3>
+                    <p>Building scalable web apps with Python, Flask, Node.js, and React</p>
+                </div>
+                <div class="highlight-card glass-card">
+                    <div class="highlight-icon"><i data-lucide="database"></i></div>
+                    <h3>Data Engineering</h3>
+                    <p>Processing 60K+ records with advanced analytics and visualization</p>
+                </div>
+                <div class="highlight-card glass-card">
+                    <div class="highlight-icon"><i data-lucide="rocket"></i></div>
+                    <h3>Automation Expert</h3>
+                    <p>OCR-based document validation and intelligent workflow automation</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Contact me  -->
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Where I've <span class="text-gradient">Worked</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-badge">Internship</span>
+                        <h3>Technical Intern</h3>
+                        <h4>OSETTL Technologies Pvt. Ltd.</h4>
+                        <div class="timeline-meta">
+                            <span><i data-lucide="calendar"></i> Oct 2025</span>
+                            <span><i data-lucide="map-pin"></i> Remote</span>
+                        </div>
+                        <ul>
+                            <li>Developed backend automation workflows using Python and Flask following SDLC practices
+                            </li>
+                            <li>Implemented document verification systems using pattern matching and OCR</li>
+                            <li>Integrated real-time Excel/Google Sheets updates and automated report generation</li>
+                            <li>Debugged backend services and collaborated with stakeholders</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span><span>Flask</span><span>OCR</span><span>Automation</span><span>Google
+                                APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-badge research">Research</span>
+                        <h3>Research Intern</h3>
+                        <h4>NIT Kurukshetra</h4>
+                        <div class="timeline-meta">
+                            <span><i data-lucide="calendar"></i> May – July 2025</span>
+                            <span><i data-lucide="map-pin"></i> Remote</span>
+                        </div>
+                        <ul>
+                            <li>Developed ML/DL-based PCOS prediction system achieving 93.9% accuracy</li>
+                            <li>Implemented SHAP-driven model transparency for improved clinical decision-making</li>
+                            <li>Paper accepted at OCIT 2025 conference on interpretable AI in healthcare</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Machine Learning</span><span>Deep
+                                Learning</span><span>SHAP</span><span>Python</span><span>Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-badge">Internship</span>
+                        <h3>Data Science Intern</h3>
+                        <h4>Coincent.ai</h4>
+                        <div class="timeline-meta">
+                            <span><i data-lucide="calendar"></i> Summer 2024</span>
+                            <span><i data-lucide="map-pin"></i> Remote</span>
+                        </div>
+                        <ul>
+                            <li>Completed comprehensive Data Science with Python training program</li>
+                            <li>Worked on real-world data analytics and visualization projects</li>
+                            <li>Gained hands-on experience with ML algorithms and data preprocessing</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span><span>Data Science</span><span>Analytics</span><span>Visualization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Featured <span class="text-gradient">Work</span></h2>
+                <p class="section-description">A collection of projects showcasing my expertise in ML, full-stack
+                    development, and intelligent automation</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card" data-color="cyan">
+                    <span class="project-badge"><i data-lucide="sparkles"></i> Featured</span>
+                    <h3>Self-Healing AI Pipeline</h3>
+                    <h4>Automated ML System</h4>
+                    <p>Built an automated ML pipeline with data drift detection, feature selection, and automated model
+                        retraining. Integrated SHAP explainability and PSI-based monitoring for improved model
+                        reliability.</p>
+                    <div class="tech-tags">
+                        <span>Python</span><span>Flask</span><span>Machine
+                            Learning</span><span>SHAP</span><span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/mr-rajesh857/Self-Healing-AI-Pipeline-" target="_blank" class="project-link">
+                        <i data-lucide="github"></i> View Code
+                    </a>
+                </div>
+                <div class="project-card glass-card" data-color="purple">
+                    <span class="project-badge"><i data-lucide="sparkles"></i> Featured</span>
+                    <h3>Automobile Insurance Fraud Analytics</h3>
+                    <h4>Fraud Detection System</h4>
+                    <p>Processed 60,000+ records using Python for EDA, feature engineering, and ML modeling. Developed a
+                        Flask-based prediction interface and Power BI dashboard for fraud insights.</p>
+                    <div class="tech-tags">
+                        <span>Python</span><span>Flask</span><span>Machine Learning</span><span>Power
+                            BI</span><span>HTML/CSS</span>
+                    </div>
+                    <a href="https://github.com/mr-rajesh857/frud_detection" target="_blank" class="project-link">
+                        <i data-lucide="github"></i> View Code
+                    </a>
+                </div>
+                <div class="project-card glass-card" data-color="emerald">
+                    <span class="project-badge"><i data-lucide="sparkles"></i> Featured</span>
+                    <h3>Tour India</h3>
+                    <h4>AI-Powered Travel Platform</h4>
+                    <p>Full-stack AI-driven travel platform with car rentals, hotel booking, and real-time assistance
+                        features. Personalized tourist recommendations using Gemini-powered ML engine.</p>
+                    <div class="tech-tags">
+                        <span>Flask</span><span>MongoDB</span><span>Gemini
+                            AI</span><span>JavaScript</span><span>HTML/CSS</span>
+                    </div>
+                    <a href="https://github.com/mr-rajesh857/TOUR-INDIA" target="_blank" class="project-link">
+                        <i data-lucide="github"></i> View Code
+                    </a>
+                </div>
+                <div class="project-card glass-card" data-color="orange">
+                    <h3>PCOS Prediction System</h3>
+                    <h4>Healthcare ML Application</h4>
+                    <p>ML/DL-based PCOS prediction achieving 93.9% accuracy. Implemented SHAP-driven model transparency
+                        for improved clinical decision-making.</p>
+                    <div class="tech-tags">
+                        <span>Python</span><span>Deep
+                            Learning</span><span>SHAP</span><span>Scikit-learn</span><span>TensorFlow</span>
+                    </div>
+                    <a href="https://github.com/rajeshkumarpanda" target="_blank" class="project-link">
+                        <i data-lucide="github"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="contact-section" id="contact">
-  <div class="contact-container">
-      <h2 class="contact-title">Contact Me</h2>
-      <span class="contact-subtitle">Get in touch</span>
+    <!-- Publications Section -->
+    <section class="section section-alt" id="publications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Research</span>
+                <h2 class="section-title">IEEE <span class="text-gradient">Publications</span></h2>
+                <p class="section-description">Peer-reviewed research papers published in IEEE conferences</p>
+            </div>
+            <div class="pub-stats">
+                <div class="pub-stat glass-card">
+                    <i data-lucide="file-text"></i>
+                    <span class="pub-stat-value text-gradient">4</span>
+                    <span class="pub-stat-label">Papers Published</span>
+                </div>
+                <div class="pub-stat glass-card">
+                    <i data-lucide="award"></i>
+                    <span class="pub-stat-value text-gradient">3</span>
+                    <span class="pub-stat-label">IEEE Xplore</span>
+                </div>
+                <div class="pub-stat glass-card">
+                    <i data-lucide="book-open"></i>
+                    <span class="pub-stat-value text-gradient">3</span>
+                    <span class="pub-stat-label">Conferences</span>
+                </div>
+                <div class="pub-stat glass-card">
+                    <i data-lucide="external-link"></i>
+                    <span class="pub-stat-value text-gradient">100+</span>
+                    <span class="pub-stat-label">Citations Goal</span>
+                </div>
+            </div>
+            <div class="publications-list">
+                <div class="publication-card glass-card">
+                    <div class="pub-icon"><i data-lucide="file-text"></i></div>
+                    <div class="pub-content">
+                        <div class="pub-meta">
+                            <span class="pub-status published">Published</span>
+                            <span>SCOPES-2024 IEEE</span>
+                            <span>• 2024</span>
+                        </div>
+                        <h3>Agri-Horticulture Commodity Price Prediction by Deep Learning Techniques</h3>
+                        <p>Deep learning approach for predicting agricultural commodity prices using time-series
+                            analysis.</p>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10990812" target="_blank"
+                            class="pub-link">
+                            View on IEEE Xplore <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="publication-card glass-card">
+                    <div class="pub-icon"><i data-lucide="file-text"></i></div>
+                    <div class="pub-content">
+                        <div class="pub-meta">
+                            <span class="pub-status published">Published</span>
+                            <span>GIET-2025 IEEE</span>
+                            <span>• 2025</span>
+                        </div>
+                        <h3>Personalized Exercise and Diet Recommendation Using ML and Deep Learning</h3>
+                        <p>ML-based personalized health recommendation system for exercise and diet planning.</p>
+                        <a href="https://ieeexplore.ieee.org/document/11234748" target="_blank" class="pub-link">
+                            View on IEEE Xplore <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="publication-card glass-card">
+                    <div class="pub-icon"><i data-lucide="file-text"></i></div>
+                    <div class="pub-content">
+                        <div class="pub-meta">
+                            <span class="pub-status published">Published</span>
+                            <span>GIET-2025 IEEE</span>
+                            <span>• 2025</span>
+                        </div>
+                        <h3>Data-Driven Irrigation Optimization: A Comparative Study of ML and DL Models</h3>
+                        <p>Comparative analysis of machine learning models for smart irrigation systems.</p>
+                        <a href="https://ieeexplore.ieee.org/document/11234795" target="_blank" class="pub-link">
+                            View on IEEE Xplore <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="publication-card glass-card">
+                    <div class="pub-icon"><i data-lucide="file-text"></i></div>
+                    <div class="pub-content">
+                        <div class="pub-meta">
+                            <span class="pub-status accepted">Accepted</span>
+                            <span>OCIT 2025</span>
+                            <span>• 2025</span>
+                        </div>
+                        <h3>Improving Clinical Trust via SHAP-based Interpretability in Early PCOS Detection</h3>
+                        <p>Interpretable AI for early detection of Polycystic Ovary Syndrome using SHAP analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="contact-grid">
-          <div class="contact-info">
-              <div class="info-item">
-                <i class="fa-solid fa-phone"></i>
-                  <div>
-                      <h3 class="info-title">Phone</h3>
-                      <span class="info-detail"><a href="tel:+9186581182272">+91 86581182272</a></span>
-                  </div>
-              </div>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">Technical <span class="text-gradient">Expertise</span></h2>
+            </div>
+            <div class="skills-tabs">
+                <button class="skill-tab active" data-tab="languages">Languages</button>
+                <button class="skill-tab" data-tab="frameworks">Frameworks & Tech</button>
+                <button class="skill-tab" data-tab="ai">AI & Data Science</button>
+                <button class="skill-tab" data-tab="tools">Tools & Platforms</button>
+            </div>
+            <div class="skills-content glass-card">
+                <div class="skill-panel active" id="languages">
+                    <div class="skill-bar"><span>Python</span><span>95%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>JavaScript</span><span>85%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>Java</span><span>75%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>SQL</span><span>88%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-panel" id="frameworks">
+                    <div class="skill-bar"><span>Flask</span><span>92%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>Node.js</span><span>78%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>REST APIs</span><span>90%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>HTML/CSS</span><span>88%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-panel" id="ai">
+                    <div class="skill-bar"><span>Machine Learning</span><span>90%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>Deep Learning</span><span>85%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>NLP</span><span>75%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>Data Analytics</span><span>88%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-panel" id="tools">
+                    <div class="skill-bar"><span>Git/GitHub</span><span>92%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>Power BI</span><span>80%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>MongoDB</span><span>78%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><span>AWS</span><span>65%</span>
+                        <div class="bar">
+                            <div class="fill" style="--width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-cloud">
+                <h3>All Technologies</h3>
+                <div class="cloud-tags">
+                    <span>Python</span><span>Flask</span><span>JavaScript</span><span>React</span><span>Node.js</span>
+                    <span>HTML5</span><span>CSS3</span><span>Machine Learning</span><span>Deep
+                        Learning</span><span>TensorFlow</span>
+                    <span>Scikit-learn</span><span>SHAP</span><span>SQL</span><span>MongoDB</span><span>REST APIs</span>
+                    <span>Git</span><span>GitHub</span><span>VS Code</span><span>Power BI</span><span>AWS</span>
+                    <span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>NLP</span><span>LLMs</span>
+                    <span>RAG</span><span>Computer Vision</span><span>OCR</span><span>Agile</span><span>Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-              <div class="info-item">
-                <i class="fa-solid fa-envelope"></i>
-                  <div>
-                      <h3 class="info-title">Email</h3>
-                      <span class="info-detail">rajeshkumarpanda690@gmail.com</span>
-                  </div>
-              </div>
+    <!-- Certifications Section -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">Certifications & <span class="text-gradient">Awards</span></h2>
+            </div>
+            <div class="certs-grid">
+                <div class="certs-column">
+                    <h3><i data-lucide="check-circle"></i> Certifications</h3>
+                    <div class="certs-list">
+                        <div class="cert-card glass-card">
+                            <span class="cert-issuer">Oracle</span>
+                            <h4>Oracle Cloud Infrastructure 2025 - AI Foundations Associate</h4>
+                            <span class="cert-year">2025</span>
+                        </div>
+                        <div class="cert-card glass-card">
+                            <span class="cert-issuer">Infosys Springboard</span>
+                            <h4>Data Analysis with Python</h4>
+                            <span class="cert-year">2025</span>
+                        </div>
+                        <div class="cert-card glass-card">
+                            <span class="cert-issuer">Coincent</span>
+                            <h4>Data Science with Python</h4>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card glass-card">
+                            <span class="cert-issuer">NPTEL</span>
+                            <h4>Data Analytics with Python</h4>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card glass-card">
+                            <span class="cert-issuer">NPTEL</span>
+                            <h4>The Joy of Computing Using Python</h4>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card glass-card">
+                            <span class="cert-issuer">Accenture</span>
+                            <h4>Data Analytics and Visualization</h4>
+                            <span class="cert-year">2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="awards-column">
+                    <h3><i data-lucide="award"></i> Achievements</h3>
+                    <div class="award-card glass-card">
+                        <div class="award-icon"><i data-lucide="award"></i></div>
+                        <div class="award-content">
+                            <h4>3rd Place - Learnathon 4.0</h4>
+                            <p>University-level innovation and learning competition organized by GIET University in
+                                collaboration with Co-Ignite EdTech Services.</p>
+                            <span class="award-year">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-              <div class="info-item">
-                <i class="fa-solid fa-location-dot"></i>
-                  <div>
-                      <h3 class="info-title">Location</h3>
-                      <span class="info-detail">Berhampur, Ganjam, Odisha</span>
-                  </div>
-              </div>
-          </div>
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+                <p class="section-description">I'm always open to discussing new opportunities, collaborations, or just
+                    having a chat about technology</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <a href="mailto:rajeshkumarpanda857@gmail.com" class="contact-item glass-card">
+                        <div class="contact-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">rajeshkumarpanda857@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+918658182272" class="contact-item glass-card">
+                        <div class="contact-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">+91 8658182272</span>
+                        </div>
+                    </a>
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Odisha, India</span>
+                        </div>
+                    </div>
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/mr-rajesh857" target="_blank" class="social-link glass-card">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rajesh-kumar-panda-a48265251" target="_blank"
+                            class="social-link glass-card">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://scholar.google.com" target="_blank" class="social-link glass-card">
+                            <i data-lucide="book-open"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form glass-card">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          <form action="#" class="contact-form">
-              <div class="form-grid">
-                  <div class="form-group">
-                      <label for="name" class="label">Name</label>
-                      <input type="text" id="name" class="input" />
-                  </div>
-
-                  <div class="form-group">
-                      <label for="email" class="label">Email</label>
-                      <input type="email" id="email" class="input" />
-                  </div>
-              </div>
-
-              <div class="form-group">
-                  <label for="message" class="label">Message</label>
-                  <textarea id="message" class="input" rows="7"></textarea>
-              </div>
-
-              <button type="submit" class="custom-button">
-                  Send Message
-                  <i class="icon uil uil-message"></i>
-              </button>
-          </form>
-      </div>
-  </div>
-</section>
-
-
-
-<!-- Footer Section  -->
-
-<footer class="footer">
-  <div class="footer__bg">
-    <div class="footer__container container grid">
-      <div>
-        <h1 class="footer__title">Rajesh</h1>
-        <span class="footer__subtitle">Computer Science And Engineering Student</span>
-      </div>
-
-      <ul class="footer__links">
-        <li><a href="#skills" class="footer__link">Skills</a></li>
-        <li><a href="#project" class="footer__link">Projects</a></li>
-        <li><a href="#contact" class="footer__link">Contact-Me</a></li>
-      </ul>
-
-      <div class="footer__socials">
-        <a href="https://www.linkedin.com/in/rajeshkumar-panda-a48265251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="footer__social">
-       
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/mr-rajesh857" target="_blank" class="footer__social">
-          
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/mr.rajesh235?igsh=MXg4ZGxvanlmN2hnZQ==" target="__blank" class="footer__social">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-
-    <p class="footer__copy">&#169; Rajesh. All rights reserved</p>
-  </div>
-</footer>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="text-gradient">RKP</span>
+                <span class="footer-divider">|</span>
+                <span>Rajesh Kumar Panda</span>
+            </div>
+            <div class="footer-copy">
+                © 2025 Made with <span class="heart">❤</span> in India
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
